@@ -4,7 +4,7 @@ const router = express.Router();
 const pg = require('pg');
 const Pool = pg.Pool;
 const pool = new Pool({
-    database: 'artist',
+    database: 'jazzy_sql',
     host: 'localhost'
   });
 

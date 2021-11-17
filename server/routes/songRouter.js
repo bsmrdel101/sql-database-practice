@@ -7,7 +7,7 @@ const pg = require('pg');
 const Pool = pg.Pool;
 
 const pool = new Pool({
-    database: 'song',
+    database: 'jazzy_sql',
     host: 'localhost'
   });
 
