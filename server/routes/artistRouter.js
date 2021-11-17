@@ -19,7 +19,7 @@ pool.on('connect', () => {
 
 
 router.get('/', (req, res) => {
-    const sqlText = 'SELECT * FROM artist;'
+  const sqlText = 'SELECT * FROM artist;'
   pool.query(sqlText)
     .then((dbRes) => {
       const artistFromDb = dbRes.rows;

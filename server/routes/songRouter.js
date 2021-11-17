@@ -39,7 +39,7 @@ router.post('/', (req, res) => {
     const newSong = req.body;
     const sqlText = (`
     INSERT INTO "song"
-    "title", "length", "released")
+    ("title", "length", "released")
     VALUES
       ($1, $2, $3);
   `)
