@@ -23,7 +23,7 @@ router.get('/', (req, res) => {
   pool.query(sqlText)
     .then((dbRes) => {
       const artistFromDb = dbRes.rows;
-      res.send(artistFromDb)
+      res.send(artistFromDb);
     }).catch((dbErr) => {
       console.error(dbErr);
     });

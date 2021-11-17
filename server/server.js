@@ -9,7 +9,7 @@ app.use(express.static('server/public'));
 
 // Require routers
 const songRouter = require('./routes/songRouter');
-const artistRouter = require('./routes/songRouter');
+const artistRouter = require('./routes/artistRouter');
 
 const artistList = [ 
     {
